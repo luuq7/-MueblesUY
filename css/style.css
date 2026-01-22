@@ -1,0 +1,218 @@
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(127, 125, 209);
+    text-align: center;
+    font-size: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todocenter {
+    text-align: center;
+}
+
+
+header {
+    background-color: rgba(37, 5, 56, 0.233);
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+}
+
+
+main {
+    background-color: rgba(128, 97, 13, 0.171);
+    padding: 20px;
+}
+
+
+.trabajos {
+    background-color: rgba(109, 207, 17, 0.233);
+    padding: 20px;
+    color: black;
+}
+
+.galeria figure {
+    background-color: rgba(253, 174, 174, 0.233);
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: inline-block;
+    margin: 10px;
+}
+
+.imagencard {
+    width: 300px;
+    height: 300px;
+}
+
+
+.destacados {
+    background-color: #0691327c;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.destacados::before,
+.destacados::after {
+    content: "—";
+    margin: 0 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.productos-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.Comprar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(18, 197, 78, 0.37);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+
+.masproductos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+
+
+.footer {
+    background-color: rgba(253, 226, 152, 0.233);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.contacto-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+.titulo-garantia {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.garantia-contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 40px;
+}
+
+.garantia-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    width: 30%;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .productos-flex,
+    .garantia-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto,
+    .garantia-card {
+        width: 90%;
+    }
+
+    .imagencard {
+        width: 100%;
+        height: auto;
+    }
+}
+
