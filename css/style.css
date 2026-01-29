@@ -1,7 +1,13 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin 0;
+    padding: 0;
+}
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
+    background-color: #f6f6f6;
 }
 
 h1 {
@@ -11,15 +17,12 @@ h1 {
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style: none;
 }
 
 .todocenter {
     text-align: center;
 }
-
 
 header {
     background-color: rgba(37, 5, 56, 0.233);
@@ -34,41 +37,42 @@ header nav ul {
 
 header nav ul li a {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
 }
 
 header nav ul li a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
-
 
 main {
-    background-color: rgba(128, 97, 13, 0.171);
     padding: 20px;
 }
-
 
 .trabajos {
     background-color: rgba(109, 207, 17, 0.233);
     padding: 20px;
-    color: black;
+    margin-bottom: 40px;
+}
+
+.galeria {
+    text-align: center;
 }
 
 .galeria figure {
     background-color: rgba(253, 174, 174, 0.233);
-    width: 300px;
     padding: 20px;
     border-radius: 20px;
-    text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     display: inline-block;
     margin: 10px;
+    max-width: 300px;
 }
 
 .imagencard {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
 }
 
 
@@ -76,6 +80,7 @@ main {
     background-color: #0691327c;
     padding: 20px;
     margin: 20px 0;
+    text-align: center;
 }
 
 .destacados::before,
@@ -95,12 +100,14 @@ main {
 
 .producto {
     background-color: white;
-    width: 300px;
     padding: 20px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    max-width: 300px;
+    min-width: 260px;
 }
 
 .producto:hover {
@@ -108,16 +115,19 @@ main {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.Comprar {
+.btn-comprar {
     display: inline-block;
     text-decoration: none;
-    background-color: rgba(18, 197, 78, 0.37);
+    background-color: #1f7a4d;
     color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-
+.btn-comprar:hover {
+    background-color: #155c39;
+}
 
 .masproductos {
     display: flex;
@@ -127,12 +137,11 @@ main {
 }
 
 
-
 .footer {
     background-color: rgba(253, 226, 152, 0.233);
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .footer ul {
@@ -155,8 +164,6 @@ main {
     margin: 0 auto;
 }
 
-
-
 .titulo-garantia {
     text-align: center;
     font-size: 32px;
@@ -165,31 +172,24 @@ main {
 
 .garantia-contenedor {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 40px;
+    justify-content: center;
 }
 
 .garantia-card {
     background-color: rgba(255, 255, 255, 0.6);
     padding: 30px;
-    width: 30%;
     border-radius: 25px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
 }
-
-
-.main-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 50px;
-}
-
-
 
 @media (max-width: 700px) {
-
     h1 {
         font-size: 36px;
     }
@@ -198,21 +198,7 @@ main {
         flex-direction: column;
         gap: 10px;
     }
-
-    .productos-flex,
-    .garantia-contenedor {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .producto,
-    .garantia-card {
-        width: 90%;
-    }
-
-    .imagencard {
-        width: 100%;
-        height: auto;
-    }
 }
+
+
 
