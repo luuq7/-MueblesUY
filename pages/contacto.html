@@ -1,82 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../css/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacto | MueblesUY</title>
+
+  
+  <link rel="stylesheet" href="../css/style.css">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-    <header>
-        <h1>Nuestros contactos</h1>
-        <h2 class="todocenter">Consulta sin compromiso</h2>
-        <nav class="todocenter">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="garantia.html">Garantía</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main >
 
-    <section class="contacto-intro">
-        <h2>Contacto</h2>
-        <p>Escríbenos para cualquier consulta o pedido que tengas.</p>
-    </section>
+<header>
+  <nav class="navbar-container">
 
-    <section class="formulario-contacto">
-        <h3></h3>
+    <div class="logo">
+      <a href="../index.html">
+        <h2>MueblesUY</h2>
+      </a>
+    </div>
 
-        <form>
-            <fieldset>
-                <legend>Hace tu consulta aqui</legend>
-                <label for="">Nombre</label>
-                <input type="text" name="nombre" required>
-                <label for="">Apellido</label>
-                <input type="text" name="apellido" required>
-                <label for="">Email</label> 
-                <input type="email" name="email" required>
-               <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" placeholder="dejanos tu consulta aqui"></textarea>
-            </fieldset>
-            </div>
+    <ul class="menu">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="garantia.html">Garantía</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
 
-            <button type="submit">Enviar Consulta</button>
-        </form>
-    </section>
+    
+    <div class="buscador">
+      <input type="text" placeholder="Buscar muebles...">
+      <button>Buscar</button>
+    </div>
 
-    <section class="info-contacto">
-        <h3 class="todocenter">Mas informacion</h3>
-        <ul class="todocenter">
-            <li>📌 Dirección: Uruguay, Montevideo</li>
-            <li>📞 Teléfono: 094758245</li>
-            <li>📧 Email: lucasbarcos0@gmail.com</li>
-            <li>📦 Envios: Gratis en Montevideo, 24hs despues de realizada la compra</li>
+  </nav>
+</header>
 
-            <li>🕒 Horarios: Lunes a viernes de 10 a 18hs</li>
-        </ul>
-    </section>
 
-    <section class="ubicacion">
-        <h3>¿Dónde estamos?</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209591.45544802354!2d-56.1974716!3d-34.834449150000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1765213658824!5m2!1ses!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+
+<main>
+
+  
+
+  <section class="contacto-intro">
+
+    <h2>Contacto</h2>
+
+    <p>Escribinos para cualquier consulta.</p>
+
+  </section>
+
+
+  
+
+  <section class="formulario-contacto">
+
+    <form>
+
+      <label>Nombre</label>
+      <input type="text" required>
+
+
+      <label>Email</label>
+      <input type="email" required>
+
+
+      <label>Mensaje</label>
+      <textarea required></textarea>
+
+
+      <button type="submit" class="btn-comprar">
+        Enviar
+      </button>
+
+    </form>
+
+  </section>
+
+
+ 
+
+  <section class="info-contacto">
+
+    <h3>Más información</h3>
+
+    <ul>
+      <li>📞 094758245</li>
+      <li>📧 lucasbarcos0@gmail.com</li>
+      <li>📍 Montevideo</li>
+    </ul>
+
+  </section>
 
 </main>
-    </main>
 
-    <footer class="footer">
-        <h3 class="footer">Información de contacto</h3>
-        <ul class="footer">
-            <li>Contacto: 094758245</li> 
-            <li>instagram: @muebles.uy</li>
-        </ul>
-        <p class="footer">Sitio hecho por Lucas Barcos</p>
-    </footer>
+
+
+<footer class="footer">
+
+  <h3>Información de contacto</h3>
+
+  <ul>
+    <li>Contacto: 094758245</li>
+    <li>Instagram: @muebles.uy</li>
+  </ul>
+
+  <p>Sitio hecho por Lucas Barcos</p>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

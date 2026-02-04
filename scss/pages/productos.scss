@@ -1,0 +1,55 @@
+/* scss/pages/_productos.scss */
+
+.todocenter {
+    text-align: center;
+    margin-top: 40px;
+    color: $primary-dark;
+}
+
+.productos-flex {
+    display: flex;
+    flex-wrap: wrap; // Permite que los productos bajen a la siguiente fila
+    justify-content: center;
+    gap: 30px; // Espacio entre cada mueble
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ajuste para el buscador en el header */
+.buscador {
+    display: flex;
+    gap: 10px;
+    
+    input {
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    button {
+        background-color: $primary-dark;
+        color: $white;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten($primary-dark, 10%);
+        }
+    }
+}
+
+.masproductos {
+    display: flex;       // Los pone uno al lado del otro
+    justify-content: center; 
+    gap: 20px;           // Espacio entre ellos
+    margin: 40px 0;
+
+    a {
+        @extend .btn-comprar; // <--- ¡Esto hace la magia! Copia bordes, color y hover
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;   // Un poco más grandes para que destaquen
+    }
+}

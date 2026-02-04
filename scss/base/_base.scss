@@ -1,0 +1,17 @@
+body {
+  font-family: $font-base;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.destacados {
+    border-bottom: 3px solid $primary-color;
+    padding-bottom: 5px;
+    display: block;
+    width: fit-content; // Para que no cruce toda la pantalla si no quieres
+    margin: 0 auto 30px auto; // Lo centra y le da espacio abajo
+}

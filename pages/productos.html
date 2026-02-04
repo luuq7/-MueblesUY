@@ -1,82 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <link rel="stylesheet" href="../css/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Productos | MueblesUY</title>
+
+  
+  <link rel="stylesheet" href="../css/style.css">
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header class="todocenter">
-    <h1>Nuestros Productos</h1>
-    <h2>Calidad y diseño a tu alcance</h2>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-            <li><a href="../pages/garantia.html">Garantía</a></li>
-        </ul>
-    </nav>
+
+<header>
+  <nav class="navbar-container">
+
+    <div class="logo">
+      <a href="../index.html">
+        <h2>MueblesUY</h2>
+      </a>
+    </div>
+
+    <ul class="menu">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="garantia.html">Garantía</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <div class="buscador">
+      <input type="text" placeholder="Buscar muebles...">
+      <button>Buscar</button>
+    </div>
+
+  </nav>
 </header>
+
+
 
 <main>
 
-    <h2 class="destacados todocenter">Nuestros Productos</h2>
+  <h2 class="destacados todocenter">Nuestros Productos</h2>
 
-    <section class="productos-flex">
+  <section class="productos-flex">
 
-        <div class="producto">
-            <h4>Mueble 5 cajones Marrón</h4>
-            <img src="../img/mueblemarron.jpg" class="imagencard" alt="Mueble marrón">
-            <p>$2800 IVA INCLUIDO</p>
-            <p>Ideal para dormitorio o comedor.</p>
-            <a href="#" class="Comprar">Comprar</a>
-        </div>
+    <div class="producto">
 
-        <div class="producto">
-            <h4>Mueble 3 cajones Blanco</h4>
-            <img src="../img/muebleblanco.jpg" class="imagencard" alt="Mueble blanco">
-            <p>$2500 IVA INCLUIDO</p>
-            <p>Perfecto para baño o pequeños espacios.</p>
-            <a href="#" class="Comprar">Comprar</a>
-        </div>
+      <h4>Mueble 5 cajones Marrón</h4>
 
-        <div class="producto">
-            <h4>Mueble 4 cajones Roble</h4>
-            <img src="../img/mueblefuera.jpg" class="imagencard" alt="Mueble roble">
-            <p>$4500 IVA INCLUIDO</p>
-            <p>Ideal para exteriores.</p>
-            <a href="#" class="Comprar">Comprar</a>
-        </div>
+      <img src="../img/mueblemarron.jpg"
+           class="imagencard"
+           alt="Mueble marrón de 5 cajones">
 
-        <div class="producto">
-            <h4>Sillón de pallets</h4>
-            <img src="../img/exterior.jpg" class="imagencard" alt="Sillón de pallets">
-            <p>$5200 IVA INCLUIDO</p>
-            <p>Perfecto para jardines y patios.</p>
-            <a href="#" class="Comprar">Comprar</a>
-        </div>
+      <p>$2800 IVA INCLUIDO</p>
 
-    </section>
+      <a href="#" class="btn-comprar">Comprar</a>
 
-    <div class="masproductos">
-        <a href="../index.html">Volver al inicio</a>
     </div>
+
+
+    <div class="producto">
+
+      <h4>Mueble 3 cajones Blanco</h4>
+
+      <img src="../img/muebleblanco.jpg"
+           class="imagencard"
+           alt="Mueble blanco de 3 cajones">
+
+      <p>$2500 IVA INCLUIDO</p>
+
+      <a href="#" class="btn-comprar">Comprar</a>
+
+    </div>
+
+
+    <div class="producto">
+
+      <h4>Sillon exterior</h4>
+
+      <img src="../img/mueblefuera.jpg"
+           class="imagencard"
+           alt="Sillon exterior de madera">
+
+      <p>$4500 IVA INCLUIDO</p>
+
+      <a href="#" class="btn-comprar">Comprar</a>
+
+    </div>
+
+      <div class="producto">
+
+      <h4>Mueble para tv</h4>
+
+      <img src="../img/tele.jpg"
+           class="imagencard"
+           alt="Mueble para tv de madera">
+      <p>$3200 IVA INCLUIDO</p>
+
+      <a href="#" class="btn-comprar">Comprar</a>
+
+  </section>
+
+
+  <div class="masproductos">
+
+    <a href="../index.html">Volver al inicio</a>
+
+  </div>
 
 </main>
 
+<!-- ================= FOOTER ================= -->
+
 <footer class="footer">
-    <h3>Información de contacto</h3>
-    <ul>
-        <li>Contacto: 094758245</li> 
-        <li>Instagram: @muebles.uy</li>
-    </ul>
-    <p>Sitio hecho por Lucas Barcos</p>
+
+  <h3>Información de contacto</h3>
+
+  <ul>
+    <li>Contacto: 094758245</li>
+    <li>Instagram: @muebles.uy</li>
+  </ul>
+
+  <p>Sitio hecho por Lucas Barcos</p>
+
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

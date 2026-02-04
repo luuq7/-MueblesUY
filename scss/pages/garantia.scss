@@ -1,0 +1,44 @@
+/* scss/pages/_garantia.scss */
+
+.titulo-garantia {
+    text-align: center;
+    margin: 50px 0;
+    color: $primary-dark;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.garantia-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto 80px auto;
+}
+
+.garantia-card {
+    background-color: $white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: $shadow-main;
+    border-top: 5px solid $primary-color; // Un detalle en la parte superior
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    h3 {
+        color: $primary-color;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    p {
+        color: #666;
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+}

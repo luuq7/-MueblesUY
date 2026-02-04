@@ -1,0 +1,45 @@
+/* scss/components/_buttons.scss */
+
+.btn-comprar {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  /* Quitamos el "v." para que Sass reconozca la variable global */
+  background: $primary-color; 
+  color: $white;
+
+  &:hover {
+    /* Quitamos el "v." aquí también */
+    background: $primary-dark;
+  }
+}
+.btn-comprar {
+    // ... tu código anterior
+    transition: background-color 0.3s ease, transform 0.2s active;
+
+    &:hover {
+        background-color: $primary-dark;
+        transform: scale(1.05); // Crece un poquito al pasar el mouse
+    }
+
+    &:active {
+        transform: scale(0.95); // Se "hunde" un poquito al hacer clic
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.producto {
+    animation: fadeInUp 0.8s ease-out; // Aplicas la animación de entrada
+}

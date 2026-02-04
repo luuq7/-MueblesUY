@@ -1,0 +1,16 @@
+/* scss/abstracts/_mixins.scss */
+
+@mixin boton-base {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; // Un toque de suavidad no viene mal
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

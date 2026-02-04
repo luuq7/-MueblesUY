@@ -1,0 +1,78 @@
+/* scss/pages/_contacto.scss */
+
+.contacto-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    
+    h2 {
+        color: $primary-dark;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        color: #666;
+    }
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: $shadow-main;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        label {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: -10px; // Acerca el label al input
+        }
+
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+
+            &:focus {
+                outline: none;
+                border-color: $primary-color;
+                box-shadow: 0 0 5px rgba($primary-color, 0.3);
+            }
+        }
+
+        textarea {
+            height: 150px;
+            resize: none; // Evita que el usuario deforme el diseño
+        }
+    }
+}
+
+.info-contacto {
+    text-align: center;
+    padding-bottom: 60px;
+
+    h3 {
+        color: $primary-dark;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+    }
+}

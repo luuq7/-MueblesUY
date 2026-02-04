@@ -1,0 +1,45 @@
+
+
+.producto {
+  background: $white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: $shadow-main;
+  text-align: center;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+}
+
+.imagencard {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.producto {
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+    &:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .imagencard {
+        transition: transform 0.5s ease; 
+        overflow: hidden; 
+    }
+
+    &:hover .imagencard {
+        transform: scale(1.1); 
+    }
+}

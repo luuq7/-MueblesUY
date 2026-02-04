@@ -1,93 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mueblesuy</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MueblesUY | Tienda de Muebles</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Mueblesuy</h1>
-        <h2 class="todocenter">Calidad y diseño a tu alcance</h2>
-
-        <nav class="todocenter">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="pages/garantia.html">Garantía</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main-grid todocenter">
-
-        <section class="galeria">
-            <h3 class="trabajos">Galería de nuestros trabajos</h3>
-
-            <div class="contenedor-imagenes">
-                <figure>
-                    <img src="img/exterior.jpg" class="imagencard" alt="Sillón de pallets exterior">
-                    <figcaption>Sillón de pallets exterior</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="img/exterior1.jpg" class="imagencard" alt="Juego de jardín en pallets">
-                    <figcaption>Juego de jardín en pallets</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section>
-            <h3 class="destacados">Productos Destacados</h3>
-
-            <div class="productos-flex">
-
-                <div class="producto">
-                    <h4>Mueble 5 cajones Marrón</h4>
-                    <img src="img/mueblemarron.jpg" class="imagencard" alt="">
-                    <p>$2800 IVA INCLUIDO</p>
-                    <p>Ideal para dormitorio o comedor.</p>
-                    <a href="#" class="Comprar">comprar</a>
-                </div>
-
-                <div class="producto">
-                    <h4>Mueble 3 cajones Blanco</h4>
-                    <img src="img/muebleblanco.jpg" class="imagencard" alt="">
-                    <p>$2500 IVA INCLUIDO</p>
-                    <p>Perfecto para baño o pequeños espacios.</p>
-                    <a href="#" class="Comprar">comprar</a>
-                </div>
-
-                <div class="producto">
-                    <h4>Mueble 4 cajones Roble</h4>
-                    <img src="img/mueblefuera.jpg" class="imagencard" alt="">
-                    <p>$4500 IVA INCLUIDO</p>
-                    <p>Ideal para disfrutar de tu espacio exterior.</p>
-                    <a href="#" class="Comprar">comprar</a>
-                </div>
-
-            </div>
-        </section>
-
-        <div class="masproductos">
-            <a href="pages/productos.html">Más productos</a>
-            <a href="pages/garantia.html">Garantías de nuestros productos</a>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container navbar-container">
+        <div class="logo">
+          <a href="index.html">
+            <h2>MueblesUY</h2>
+          </a>
         </div>
 
-    </main>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <footer class="footer">
-        <h3>Información de contacto</h3>
-        <ul>
-            <li>Contacto: 094758245</li>
-            <li>Instagram: @muebles.uy</li>
-        </ul>
-        <p>Sitio hecho por Lucas Barcos</p>
-    </footer>
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="menu ms-auto">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/productos.html">Productos</a></li>
+            <li><a href="pages/garantia.html">Garantía</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <section class="container mt-4 mb-5">
+    <div id="carouselMuebles" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button data-bs-target="#carouselMuebles" data-bs-slide-to="0" class="active"></button>
+        <button data-bs-target="#carouselMuebles" data-bs-slide-to="1"></button>
+        <button data-bs-target="#carouselMuebles" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/mejorcomodidad.png" class="d-block w-100" alt="Mejor comodidad">
+        </div>
+        <div class="carousel-item">
+          <img src="img/mueblesuy.png" class="d-block w-100" alt="MueblesUY">
+        </div>
+        <div class="carousel-item">
+          <img src="img/publicidadafuera.png" class="d-block w-100" alt="Publicidad">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" data-bs-target="#carouselMuebles" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" data-bs-target="#carouselMuebles" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="galeria mb-5">
+      <h3 class="trabajos mb-4">Galería de nuestros trabajos</h3>
+      <div class="row justify-content-center g-4 contenedor-imagenes">
+        <div class="col-12 col-md-6 col-lg-4">
+          <figure>
+            <img src="img/exterior.jpg" class="imagencard" alt="Sillón de pallets exterior">
+            <figcaption>Sillón de pallets exterior</figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <figure>
+            <img src="img/exterior1.jpg" class="imagencard" alt="Juego de jardín en pallets">
+            <figcaption>Juego de jardín en pallets</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h3 class="destacados mb-4 text-center">Productos Destacados</h3>
+      <div class="row justify-content-center g-4 productos-flex">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="producto">
+            <h4>Mueble 5 cajones Marrón</h4>
+            <img src="img/mueblemarron.jpg" class="imagencard">
+            <p>$2800 IVA INCLUIDO</p>
+            <p>Ideal para dormitorio o comedor.</p>
+            <a href="#" class="btn-comprar">Comprar</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="producto">
+            <h4>Mueble 3 cajones Blanco</h4>
+            <img src="img/muebleblanco.jpg" class="imagencard">
+            <p>$2500 IVA INCLUIDO</p>
+            <p>Perfecto para baño o pequeños espacios.</p>
+            <a href="#" class="btn-comprar">Comprar</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="producto">
+            <h4>Sillon exterior</h4>
+            <img src="img/mueblefuera.jpg" class="imagencard">
+            <p>$4500 IVA INCLUIDO</p>
+            <p>Ideal para exteriores.</p>
+            <a href="#" class="btn-comprar">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="masproductos">
+      <a href="pages/productos.html">Más productos</a>
+      <a href="pages/garantia.html">Garantías</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <h3>Información de contacto</h3>
+    <ul>
+      <li>Contacto: 094758245</li>
+      <li>Instagram: @muebles.uy</li>
+    </ul>
+    <p>Sitio hecho por Lucas Barcos</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-            
+</html>
