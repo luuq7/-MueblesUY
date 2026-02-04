@@ -43,3 +43,14 @@
 .producto {
     animation: fadeInUp 0.8s ease-out; // Aplicas la animación de entrada
 }
+
+.btn-comprar {
+    @include boton-base; // Usás tu mixin aquí
+    background-color: $primary-color;
+    color: $white;
+
+    &:hover {
+        background-color: $primary-dark;
+        transform: scale(1.05);
+    }
+}
