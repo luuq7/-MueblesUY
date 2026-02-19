@@ -1,0 +1,29 @@
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  background-color: $color-fondo;
+
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: $color-principal !important;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $color-principal !important;
+      margin-left: 15px;
+      transition: 0.3s;
+
+      &:hover {
+        color: $color-secundario !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .titulo {
+    font-size: 2.2rem;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .texto {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+}

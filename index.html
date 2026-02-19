@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tienda de muebles modernos y funcionales. Diseño, calidad y confort para tu hogar.">
+    <meta name="keywords" content="muebles, sillones, mesas, sillas, decoración, hogar">
+    <meta name="author" content="Lucas Barcos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Muebles uy</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS compilado desde SASS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Muebles uy</a>
+
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#menu"
+                    aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/garantia.html">Garantía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+<!-- ================= CAROUSEL ================= -->
+<section class="carousel-section">
+    <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="img/slider1.jpg" class="d-block w-100" alt="Living moderno con sillones beige y decoración minimalista">
+                <div class="carousel-caption">
+                    <h2>Diseño moderno</h2>
+                    <p>Muebles que transforman tu espacio</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slider2.jpg" class="d-block w-100" alt="Comedor elegante con mesa de madera natural">
+                <div class="carousel-caption">
+                    <h2>Calidad garantizada</h2>
+                    <p>Materiales resistentes y duraderos</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slider3.jpg" class="d-block w-100" alt="Dormitorio moderno minimalista con tonos claros">
+                <div class="carousel-caption">
+                    <h2>Confort y estilo</h2>
+                    <p>Elegí el mejor diseño para tu hogar</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</section>
+
+<!-- ================= HERO ================= -->
+<section class="hero text-center d-flex align-items-center">
+  <div class="container">
+    <h1>Diseño y calidad para tu hogar</h1>
+    <p class="mb-4">
+      Descubrí nuestra colección de muebles modernos, cómodos y funcionales.
+    </p>
+    <a href="pages/productos.html" class="btn btn-dark mb-5">Ver productos</a>
+    
+    <div class="row justify-content-center g-4 hero-cards">
+
+      <div class="col-md-4">
+        <div class="card info-card text-center p-4">
+          <h5>Más de 10 años de experiencia</h5>
+          <p>Fabricamos muebles con diseño moderno y materiales premium.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card info-card text-center p-4">
+          <h5>Financiación disponible</h5>
+          <p>Pagá en cuotas y equipá tu hogar sin complicaciones.</p>
+        </div>
+    </div>
+</section> 
+<!-- Calidad de nuestros productos -->
+<section class="calidad py-5">
+  <div class="container">
+    
+
+    <h2 class="text-center mb-4">Calidad de nuestros productos</h2>
+    <p class="text-center mb-5">
+      Nuestros muebles están fabricados con materiales premium y sometidos a estrictos controles de calidad.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-6">
+        <div class="card calidad-card">
+          <img src="./img/maderas.jpg" class="card-img-top" alt="Materiales premium">
+          <div class="card-body">
+            <h5>Maderas seleccionadas</h5>
+            <p>Trabajamos con materiales resistentes y duraderos que garantizan larga vida útil.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6">
+        <div class="card calidad-card">
+          <img src="./img/controlcalidad.webp" class="card-img-top" alt="Control de calidad">
+          <div class="card-body">
+            <h5>Control de calidad</h5>
+            <p>Cada producto pasa por inspecciones de nuestros expertos antes de ser entregado.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= PRODUCTOS DESTACADOS ================= -->
+<section class="productos py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Productos destacados</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card producto">
+                    <img src="img/sillon.jpg" class="card-img-top" alt="Sillón moderno color gris">
+                    <div class="card-body text-center">
+                        <h3>Sillón Moderno</h3>
+                        <p class="precio">$18950</p>
+                        <a href="#" class="btn btn-outline-dark">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card producto">
+                    <img src="img/mesa.jpg" class="card-img-top" alt="Mesa de comedor de madera natural">
+                    <div class="card-body text-center">
+                        <h3>Mesa de Comedor</h3>
+                        <p class="precio">$8790</p>
+                        <a href="#" class="btn btn-outline-dark">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card producto">
+                    <img src="img/silla.jpg" class="card-img-top" alt="Silla blanca estilo minimalista">
+                    <div class="card-body text-center">
+                        <h3>Silla Minimalista</h3>
+                        <p class="precio">$2340</p>
+                        <a href="#" class="btn btn-outline-dark">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= BENEFICIOS ================= -->
+<section class="beneficios py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Por qué elegirnos</h2>
+
+    <div class="row g-4">
+
+<div class="col-md-4">
+  <div class="card beneficio-card text-center h-100">
+    <div class="card-body">
+      
+      <img src="../img/envio.png" class="beneficio-img mb-3" alt="Envíos">
+
+      <h4 class="card-title">Envíos a todo el país</h4>
+      <p class="card-text">
+        Realizamos entregas seguras y rápidas.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-md-4">
+        <div class="card beneficio-card text-center h-100">
+          <div class="card-body">
+            <img src="../img/calidad.png" class="beneficio-img mb-3" alt="Calidad garantizada">
+            <h4 class="card-title">Calidad garantizada</h4>
+            <p class="card-text">
+              Materiales resistentes y duraderos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card beneficio-card text-center h-100">
+          <div class="card-body">
+            <img src="../img/atencion.png" class="beneficio-img mb-3" alt="Atención personalizada">
+            <h4 class="card-title">Atención personalizada</h4>
+            <p class="card-text">
+              Te asesoramos para que elijas lo mejor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="footer-contenido container">
+
+        <div class="footer-columna">
+            <h4>NAVEGAR</h4>
+            <ul>
+                <li><a href="#">Condiciones Promos</a></li>
+                <li><a href="#">Términos generales</a></li>
+                <li><a href="#">Especiales</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h4>PRODUCTOS</h4>
+            <ul>
+                <li><a href="#">Sofás</a></li>
+                <li><a href="#">Mesas</a></li>
+                <li><a href="#">Sillas</a></li>
+                <li><a href="#">Electrodomésticos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h4>MÉTODOS DE PAGO</h4>
+            <div class="metodos-pago">
+                <img src="img/visa.png" alt="Tarjeta Visa">
+                <img src="img/mastercard.png" alt="Tarjeta Mastercard">
+                <img src="img/oca.png" alt="Tarjeta Oca">
+            </div>
+        </div>
+
+        <div class="footer-columna">
+            <h4>INFORMACIÓN</h4>
+            <p>Agraciada 123, Montevideo</p>
+            <p>Uruguay</p>
+            <p>Consultas: 094 758 245</p>
+            <p>Servicio técnico: 094 758 245</p>
+        </div>
+
+    </div>
+
+    <div class="footer-abajo text-center py-3">
+        <p class="mb-0">Muebles uy - Lucas Barcos</p>
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

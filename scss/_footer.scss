@@ -1,0 +1,57 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: $color-fondo;
+  color: white;
+  padding-top: 40px;
+
+  .footer-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .footer-columna {
+    flex: 1 1 200px;
+
+    h4 {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 0.9rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .metodos-pago img {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .footer-abajo {
+    background-color: darken($color-fondo, 10%);
+    margin-top: 30px;
+    padding: 15px 0;
+    font-size: 0.9rem;
+  }
+}

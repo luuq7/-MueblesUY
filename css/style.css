@@ -1,0 +1,342 @@
+/* =========================
+   RESET GENERAL
+========================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  height: 90vh;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+
+
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.titulo {
+  font-size: 3rem;
+  color: rgb(3, 3, 3);
+}
+
+.texto {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: rgb(0, 0, 0);
+}
+
+.boton {
+  padding: 10px 25px;
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+.productos {
+  background-color: #ffffff;
+}
+
+
+.producto {
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: aparecer 0.8s ease forwards;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.producto .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Delay escalonado */
+.row .col-md-4:nth-child(1) .producto {
+  animation-delay: 0.2s;
+}
+
+.row .col-md-4:nth-child(2) .producto {
+  animation-delay: 0.4s;
+}
+
+.row .col-md-4:nth-child(3) .producto {
+  animation-delay: 0.6s;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #6b705c;
+}
+
+/* =========================
+   BENEFICIOS
+========================= */
+.beneficios {
+  padding: 60px 0;
+}
+
+.beneficios h3 {
+  color: #3e2f2f;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background-color: #3e2f2f;
+  color: white;
+  padding-top: 40px;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-columna {
+  flex: 1 1 200px;
+}
+
+.footer-columna h4 {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.footer-columna ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columna ul li {
+  margin-bottom: 8px;
+}
+
+.footer-columna ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-columna ul li a:hover {
+  text-decoration: underline;
+}
+
+.metodos-pago img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.footer-abajo {
+  background-color: #2d2222;
+  margin-top: 30px;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   ANIMACIONES
+========================= */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .titulo {
+    font-size: 2.2rem;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .texto {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  background-color: #3e2f2f;
+}
+
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d6ccc2 !important;
+}
+
+.beneficio-card {
+  border-top: 3px solid #d6ccc2;
+  box-shadow: none;
+}
+
+.beneficio-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.beneficio-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.beneficio-card:hover .beneficio-img {
+  transform: scale(1.1);
+}
+
+.hero-cards {
+  margin-top: 40px;
+}
+
+.info-card {
+  background-color: rgba(240, 240, 240, 0.9);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transition: 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecer 1s forwards;
+}
+
+.info-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Animación */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.calidad {
+  background-color: #f8f8f8;
+}
+
+.calidad-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  transition: 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecer 1s forwards;
+}
+
+.calidad-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.calidad-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Animación escalonada */
+.row .col-md-6:nth-child(2) .calidad-card {
+  animation-delay: 0.4s;
+}
+
+.producto-detalle img {
+  border-radius: 10px;
+}
+
+.producto-detalle h2 {
+  font-weight: 700;
+}
+
+.producto-detalle h3 {
+  margin: 20px 0;
+}
